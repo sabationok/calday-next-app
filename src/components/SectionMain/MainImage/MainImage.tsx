@@ -1,17 +1,8 @@
-import styled from 'styled-components';
+import * as S from './MainImage.style';
+import SG from '@/styles';
 
-export const MainImageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const MainImage: React.FC = () => {
+  return <></>;
+};
 
-export const MainImageBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-`;
-
-export const;
+export default MainImage;
