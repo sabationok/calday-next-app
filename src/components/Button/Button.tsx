@@ -1,9 +1,9 @@
 import * as S from './Button.style';
 
 export interface ButtonProps {
-  variant: 'filled' | 'outlined';
+  variant: 'filled' | 'outlinedLarge' | 'outlinedSmall';
   type?: 'button' | 'submit' | 'reset';
-  children?: any[] | string;
+  children?: React.ReactNode[] | React.ReactNode | string;
 }
 
 const Button: React.FC<ButtonProps> = ({

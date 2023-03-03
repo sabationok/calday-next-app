@@ -9,23 +9,28 @@ export const Button = styled.button`
 
   font-family: 'Mark Pro', sans-serif;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 13px;
 
-  min-height: 58px;
-  min-width: 210px;
+  user-select: none;
+  text-transform: uppercase;
 
-  padding: 0 25px;
+  font-size: ${({ variant }: ButtonProps) => variantsMap[variant].fontSize};
+  line-height: ${({ variant }: ButtonProps) => variantsMap[variant].lineHeight};
+
+  min-height: ${({ variant }: ButtonProps) => variantsMap[variant].minHeight};
+  min-width: ${({ variant }: ButtonProps) => variantsMap[variant].minWidth};
 
   background-color: ${({ variant }: ButtonProps) =>
     variantsMap[variant].backgroundColor};
   fill: ${({ variant }: ButtonProps) => variantsMap[variant].fill};
   color: ${({ variant }: ButtonProps) => variantsMap[variant].color};
-  border-style: none;
-  border-radius: 8px;
+
   border-color: ${({ variant }: ButtonProps) =>
     variantsMap[variant].borderColor};
-  border-width: 1px;
+  border-radius: ${({ variant }: ButtonProps) =>
+    variantsMap[variant].borderRadius};
+  border-width: ${({ variant }: ButtonProps) =>
+    variantsMap[variant].borderWidth};
+
   border-style: solid;
 
   &:hover {
@@ -60,8 +65,15 @@ const variantsMap = {
     borderColorActive: '#D8B681',
     fillActive: '#F2F0E4',
     colorActive: '#F2F0E4',
+    borderRadius: '8px',
+    borderWidth: '1px',
+    fontSize: '15px',
+    lineHeight: '0.87',
+    minHeight: '58px',
+    minWidth: '210px',
+    padding: '10px 25px',
   },
-  outlined: {
+  outlinedLarge: {
     backgroundColor: '#372F2A',
     borderColor: '#D8B681',
     fill: '#FFF06B',
@@ -74,5 +86,33 @@ const variantsMap = {
     borderColorActive: '#D8B681',
     fillActive: '#F2F0E4',
     colorActive: '#F2F0E4',
+    borderRadius: '8px',
+    borderWidth: '1px',
+    fontSize: '15px',
+    lineHeight: '0.87',
+    minHeight: '58px',
+    minWidth: '210px',
+    padding: '10px 25px',
+  },
+  outlinedSmall: {
+    backgroundColor: 'transparent',
+    borderColor: '#D8B681',
+    fill: '#FFF06B',
+    color: '#40464E',
+    backgroundColorHover: 'transparent',
+    borderColorHover: '#EA8C1F',
+    fillHover: '#EA8C1F',
+    colorHover: '#40464E',
+    backgroundColorActive: '#F7F6F0',
+    borderColorActive: '#E9E7DD',
+    fillActive: '#40464E',
+    colorActive: '#40464E',
+    borderRadius: '100px',
+    fontSize: '14px',
+    lineHeight: '0.93',
+    minHeight: '36px',
+    minWidth: '127px',
+    padding: '10px 19px',
+    borderWidth: '2px',
   },
 };

@@ -1,20 +1,30 @@
 import Button from '@/components/Button/Button';
+import { testData } from '@/testData';
+
 import * as S from './FormCreateEvent.style';
 
 const FormCreateEvent: React.FC = () => {
   return (
     <S.FormCreateEvent>
-      <S.Inputs>
-        <S.InputBox>
-          <input type="text" />
-        </S.InputBox>
+      <S.Wrapper>
+        <S.InputsWrapper>
+          <S.InputText
+            placeholder={testData.createEventFormData.eventInputPlaceholder}
+            name={testData.createEventFormData.eventInputName}
+          />
 
-        <S.InputBox>
-          <input type="text" />
-        </S.InputBox>
-      </S.Inputs>
+          <S.InputTime
+            placeholder={testData.createEventFormData.timeInputPlaceholder}
+            name={testData.createEventFormData.timeInputName}
+          />
+        </S.InputsWrapper>
 
-      <Button variant="filled">GET YOUR LINK</Button>
+        <S.FormNoteText>{testData.createEventFormData.note}</S.FormNoteText>
+      </S.Wrapper>
+
+      <Button variant="filled">
+        {testData.createEventFormData.submitButtonName}
+      </Button>
     </S.FormCreateEvent>
   );
 };

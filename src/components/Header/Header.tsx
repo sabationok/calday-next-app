@@ -1,9 +1,9 @@
 import Logo from './Logo/Logo';
 import NavMenuDesktop from './NavMenuDesktop/NavMenuDesktop';
-import SignUpButton from './SignUpButton/SignUpButton';
+import SignUpButton from './SignUpLinkButton/SignUpLinkButton';
 
-import * as S from './Header.style';
 import SG from '@/styles';
+import * as S from './Header.style';
 
 const Header: React.FC = () => {
   return (

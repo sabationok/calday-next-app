@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const MainTitle = styled.h1`
-  width: 717px;
-
   /* Hero */
 
   font-family: 'Gilroy', sans-serif;
@@ -18,4 +16,7 @@ export const MainTitle = styled.h1`
   /* Brown-prime */
 
   color: #423d2f;
+  @media screen and (min-width: 768px) {
+    width: 717px;
+  }
 `;

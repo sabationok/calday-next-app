@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const MainSubTitle = styled.p`
-  width: 847px;
-
   font-family: 'Gilroy', sans-serif;
 
   font-weight: 400;
@@ -14,4 +12,8 @@ export const MainSubTitle = styled.p`
   margin-bottom: 56px;
 
   color: #2b2f36;
+
+  @media screen and (min-width: 768px) {
+    width: 847px;
+  }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { sprite } from '../../svgSprite';
+import { sprite } from '../../img/svgSprite';
 
 import s from './SvgIcon.module.scss';
 
