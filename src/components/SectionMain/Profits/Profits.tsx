@@ -1,13 +1,10 @@
 import * as S from './Profits.style';
 import SG from '@/styles';
-import Image from 'next/image';
+import { IProfitItem } from '@/types/types';
+import ProfitItem from './ProfitItem/ProfitItem';
 
 type ProfitsProps = {
-  profitsList: {
-    iconId: string;
-    title: string;
-    descr: string;
-  }[];
+  profitsList: IProfitItem[];
 };
 
 const Profits: React.FC<ProfitsProps> = ({ profitsList }) => {
@@ -17,13 +14,7 @@ const Profits: React.FC<ProfitsProps> = ({ profitsList }) => {
         <SG.Container>
           <S.List>
             {profitsList.map(item => (
-              <S.ListItem key={item?.title}>
-                <S.ListItemImg>{/* <Image src={''} alt="" /> */}</S.ListItemImg>
-
-                <S.ListItemTitle>{item?.title}</S.ListItemTitle>
-
-                <S.ListItemDescr>{item?.descr}</S.ListItemDescr>
-              </S.ListItem>
+              <ProfitItem key={item.id} {...item} />
             ))}
           </S.List>
         </SG.Container>

@@ -3,10 +3,10 @@ import MainTitle from './MainTitle/MainTitle';
 import MainSubTitle from './MainSubTitle/MainSubTitle';
 import FormCreateEvent from './FormCreateEvent/FormCreateEvent';
 import testData from '@/testData';
+import MainImage from './MainImage/MainImage';
 
 import * as S from './SectionHero.style';
 import SG from '@/styles';
-import MainImage from './MainImage/MainImage';
 
 const SectionHero: React.FC = () => {
   return (

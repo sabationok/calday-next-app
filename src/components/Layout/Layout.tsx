@@ -1,15 +1,11 @@
 import Head from 'next/head';
-import { ReactNode } from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
-import SectionMain from '../SectionMain/SectionHero';
 
 import * as S from './Layout.style';
 
 type LayoutProps = {
   title?: string;
   description?: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function Layout({ title, description, children }: LayoutProps) {

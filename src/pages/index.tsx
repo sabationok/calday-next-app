@@ -7,6 +7,9 @@ import Footer from '@/components/Footer/Footer';
 import s from '@/styles/Home.module.css';
 import SectionFeatures from '@/components/SectionFeatures/SectionFeatures';
 import SectionShedulingInfo from '@/components/SectionShedulingInfo/SectionShedulingInfo';
+import SectionByCustomers from '@/components/SectionByCustomers/SectionByCustomers';
+import SectionFAQ from '@/components/SectionFAQ/SectionFAQ';
+import SectionBuyNow from '@/components/SectionBuyNow/SectionBuyNow';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +24,12 @@ export default function Home() {
         <SectionFeatures />
 
         <SectionShedulingInfo />
+
+        <SectionByCustomers />
+
+        <SectionFAQ />
+
+        <SectionBuyNow />
 
         <Footer />
       </Layout>

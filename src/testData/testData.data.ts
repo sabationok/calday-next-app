@@ -2,22 +2,30 @@ import images from '@/img';
 
 export const advantagesList = [
   {
-    iconId: '',
+    id: '1',
+    icon: images.icon_timer,
+    alt: 'icon_timer',
     title: '24/7 booking',
     descr: 'Clients can schedule appointments while you are sleeping',
   },
   {
-    iconId: '',
+    id: '2',
+    icon: images.icon_alert,
+    alt: 'icon_alert',
     title: 'Less no-shows',
     descr: 'We will remind your clients about upcoming appointments',
   },
   {
-    iconId: '',
+    id: '3',
+    icon: images.icon_clipboard_blue,
+    alt: 'icon_clipboard_blue',
     title: 'No empty slots',
     descr: 'Waitlist can help you to feel canceled appointments',
   },
   {
-    iconId: '',
+    id: '4',
+    icon: images.icon_phonebook,
+    alt: 'icon_phonebook',
     title: 'Manage Clients',
     descr: 'Store & manage clients info and contacts',
   },
@@ -43,6 +51,7 @@ export const featuresSectionData = {
   title: 'Features',
   featuresList: [
     {
+      id: '1',
       icon: images.icon_calendar,
       alt: 'icon calendar',
       title: 'Appointment Calendar',
@@ -51,6 +60,7 @@ export const featuresSectionData = {
       imgURL: '',
     },
     {
+      id: '2',
       icon: images.icon_store,
       alt: 'icon store',
       title: 'Personal Booking Page for Clients',
@@ -59,6 +69,7 @@ export const featuresSectionData = {
       imgURL: '',
     },
     {
+      id: '3',
       icon: images.icon_clipboard,
       alt: 'icon clipboard',
       title: 'Waitlist',
@@ -67,6 +78,7 @@ export const featuresSectionData = {
       imgURL: '',
     },
     {
+      id: '4',
       icon: images.icon_mail_inbox,
       alt: 'icon mail inbox',
       title: 'Reminders for You and Your Clients',
@@ -80,24 +92,28 @@ export const featuresSectionData = {
     subTitle: 'Streamline operations and improve efficiency in any industry.',
     integrationsList: [
       {
-        icon: images.icon_calendar,
+        id: '1',
+        icon: images.icon_google_calendar,
         alt: 'icon calendar',
         descr:
           "Integrate with Google Calendar to ensure you're never double booked.",
       },
       {
+        id: '2',
         icon: images.icon_monday_ten,
         alt: 'icon monday ten',
         descr:
           "Integrate with Google Calendar to ensure you're never double booked.",
       },
       {
+        id: '3',
         icon: images.icon_zoom,
         alt: 'icon zoom',
         descr:
           "Integrate with Google Calendar to ensure you're never double booked.",
       },
       {
+        id: '4',
         icon: images.icon_google_meet,
         alt: 'icon google meet',
         descr:
@@ -168,4 +184,46 @@ export const shedulingSectionData = {
       ],
     },
   ],
+};
+
+export const faqSectionData = {
+  faqList: [
+    {
+      id: '1',
+      title: 'What is booking page?',
+      descr:
+        'We are planning on adding an integration with Google Meet first, which will be followed by Zoom.',
+    },
+    {
+      id: '2',
+      title: 'Does you have integration with Meet and Zoom?',
+      descr:
+        'We are planning on adding an integration with Google Meet first, which will be followed by Zoom.',
+    },
+    {
+      id: '3',
+      title: 'Does you have integration with Google Calendar and iCal?',
+      descr:
+        'We are planning on adding an integration with Google Meet first, which will be followed by Zoom.',
+    },
+    {
+      id: '4',
+      title: 'How works waitlist feature?',
+      descr:
+        'We are planning on adding an integration with Google Meet first, which will be followed by Zoom.',
+    },
+  ],
+};
+
+export const buyNowSectionData = {
+  title: 'Small Business Scheduling',
+  subtitle:
+    'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
+  pricingPeriods: [
+    { id: '1', title: 'Week' },
+    { id: '2', title: 'Month' },
+    { id: '3', title: 'Year' },
+  ],
+  descr:
+    'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
 };

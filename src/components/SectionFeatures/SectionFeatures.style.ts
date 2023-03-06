@@ -33,6 +33,4 @@ export const FeaturesTitle = styled.h2`
     margin-bottom: 55px;
     padding: 0 138px;
   }
-
-  outline: 1px solid tomato;
 `;

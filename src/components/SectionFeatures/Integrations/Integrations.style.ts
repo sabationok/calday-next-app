@@ -5,7 +5,7 @@ export const IntegrationsContainer = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
 
-    padding: 138px;
+    padding: 0 138px;
   }
 `;
 
@@ -46,32 +46,8 @@ export const IntegrationsSubTitle = styled.p`
 `;
 export const IntegrationsList = styled.ul`
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
-`;
-
-export const ListItem = styled.li`
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 21px;
-
-  max-width: 215px;
-
-  flex-basis: 180px;
-  flex-grow: 1;
-`;
-
-export const ListImgBox = styled.div`
-  width: 32px;
-  height: 32px;
-`;
-export const ListItemDescr = styled.span`
-  font-family: 'Mark Pro', sans-serif;
-  font-weight: 450;
-  font-size: 15px;
-  line-height: 1.73;
-  text-align: center;
-
-  color: var(--graySecondary);
+  gap: 62px;
+  justify-content: space-between;
 `;
