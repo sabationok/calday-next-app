@@ -1,14 +1,15 @@
 import Head from 'next/head';
+import { ReactNode } from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import SectionMain from '../SectionMain/SectionMain';
+import SectionMain from '../SectionMain/SectionHero';
 
 import * as S from './Layout.style';
 
 type LayoutProps = {
   title?: string;
   description?: string;
-  children?: any[];
+  children?: ReactNode;
 };
 
 export default function Layout({ title, description, children }: LayoutProps) {
@@ -22,11 +23,7 @@ export default function Layout({ title, description, children }: LayoutProps) {
       </Head>
 
       <S.LayoutGradient>
-        <Header />
-
-        <SectionMain />
-
-        <Footer />
+        <>{children}</>
       </S.LayoutGradient>
     </>
   );

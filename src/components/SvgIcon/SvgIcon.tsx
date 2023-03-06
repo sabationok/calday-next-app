@@ -1,41 +1,38 @@
 import React from 'react';
-import { sprite } from '../../img/svgSprite';
+import images from '@/img';
 
-import s from './SvgIcon.module.scss';
+import * as S from './SvgIcon.style';
 
-// import * as S from './SvgIcon.style';
-
-type SvgIconProps = {
+export interface ISvgIconProps {
   iconId?: string;
   style?: object;
   size?: string;
-  svgClass?: string;
-  className?: string;
-};
+  width?: string;
+  height?: string;
+}
 
-const SvgIcon: React.FC = ({
-  iconId = 'info',
+const SvgIcon: React.FC<ISvgIconProps> = ({
+  iconId,
   style,
-  size = '',
-  svgClass = '',
-  className = '',
-}: SvgIconProps) => {
+  width,
+  height,
+  size = '18px',
+}) => {
   const styles = {
+    width: width || size,
+    height: height || size,
+    minWidth: width || size,
     ...style,
-    width: size,
-    height: size,
-    minWidth: size,
   };
 
-  const classNameArr = [s.iconBox, className].join(' ');
-  const svgClassArr = [s.svg, svgClass].join(' ');
-
   return (
-    <div className={classNameArr} style={styles}>
-      <svg className={svgClassArr}>
-        <use href={`${sprite}#icon-${iconId}`}></use>
-      </svg>
-    </div>
+    <>
+      {iconId ? (
+        <S.Svg {...{ size, height, width, style: styles }}>
+          <use href={`${''}#${iconId}`}></use>
+        </S.Svg>
+      ) : null}
+    </>
   );
 };
 

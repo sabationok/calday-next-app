@@ -1,16 +1,17 @@
-import Advantages from './Advantages/Advantages';
+import Profits from './Profits/Profits';
 import MainTitle from './MainTitle/MainTitle';
 import MainSubTitle from './MainSubTitle/MainSubTitle';
 import FormCreateEvent from './FormCreateEvent/FormCreateEvent';
-import { testData } from '@/testData';
+import testData from '@/testData';
 
-import * as S from './SectionMain.style';
+import * as S from './SectionHero.style';
 import SG from '@/styles';
+import MainImage from './MainImage/MainImage';
 
-const SectionMain: React.FC = () => {
+const SectionHero: React.FC = () => {
   return (
     <>
-      <S.SectionMain>
+      <S.SectionHero>
         <SG.Container>
           <S.FlexWrapper>
             <MainTitle title={testData.heroData.title} />
@@ -21,10 +22,12 @@ const SectionMain: React.FC = () => {
           </S.FlexWrapper>
         </SG.Container>
 
-        <Advantages advantagesList={testData.advantagesList} />
-      </S.SectionMain>
+        <MainImage />
+
+        <Profits profitsList={testData.advantagesList} />
+      </S.SectionHero>
     </>
   );
 };
 
-export default SectionMain;
+export default SectionHero;

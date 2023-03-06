@@ -12,7 +12,6 @@ export const Header = styled.header`
   width: 100%;
   height: 64px;
 
-  /* outline: 1px solid tomato; */
   background: linear-gradient(
     90.06deg,
     rgba(236, 231, 169, 0.8) 8.88%,

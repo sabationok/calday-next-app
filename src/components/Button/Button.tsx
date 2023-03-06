@@ -3,7 +3,7 @@ import * as S from './Button.style';
 export interface ButtonProps {
   variant: 'filled' | 'outlinedLarge' | 'outlinedSmall';
   type?: 'button' | 'submit' | 'reset';
-  children?: React.ReactNode[] | React.ReactNode | string;
+  children?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({

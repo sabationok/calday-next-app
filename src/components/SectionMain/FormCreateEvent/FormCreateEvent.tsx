@@ -1,5 +1,5 @@
 import Button from '@/components/Button/Button';
-import { testData } from '@/testData';
+import testData from '@/testData';
 
 import * as S from './FormCreateEvent.style';
 
@@ -19,12 +19,18 @@ const FormCreateEvent: React.FC = () => {
           />
         </S.InputsWrapper>
 
-        <S.FormNoteText>{testData.createEventFormData.note}</S.FormNoteText>
+        <Button variant="filled">
+          <S.ButtonNameMobile>
+            {testData.createEventFormData.submitButtonNameMobile}
+          </S.ButtonNameMobile>
+
+          <S.ButtonName>
+            {testData.createEventFormData.submitButtonName}
+          </S.ButtonName>
+        </Button>
       </S.Wrapper>
 
-      <Button variant="filled">
-        {testData.createEventFormData.submitButtonName}
-      </Button>
+      <S.FormNoteText>{testData.createEventFormData.note}</S.FormNoteText>
     </S.FormCreateEvent>
   );
 };

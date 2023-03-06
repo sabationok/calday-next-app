@@ -1,15 +1,29 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Layout from "@/components/Layout/Layout";
+import { Inter } from 'next/font/google';
+import Layout from '@/components/Layout/Layout';
+import Header from '@/components/Header/Header';
+import SectionHero from '@/components/SectionMain/SectionHero';
+import Footer from '@/components/Footer/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
+import s from '@/styles/Home.module.css';
+import SectionFeatures from '@/components/SectionFeatures/SectionFeatures';
+import SectionShedulingInfo from '@/components/SectionShedulingInfo/SectionShedulingInfo';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <>
-      <Layout></Layout>
+      <Layout>
+        <Header />
+
+        <SectionHero />
+
+        <SectionFeatures />
+
+        <SectionShedulingInfo />
+
+        <Footer />
+      </Layout>
     </>
   );
 }

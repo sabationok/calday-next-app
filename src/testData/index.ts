@@ -1,3 +1,3 @@
 import * as testData from './testData.data';
 
-export { testData };
+export default testData;

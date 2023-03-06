@@ -11,9 +11,8 @@ export const MainSubTitle = styled.p`
 
   margin-bottom: 56px;
 
-  color: #2b2f36;
+  color: var(--textBlack);
 
-  @media screen and (min-width: 768px) {
-    width: 847px;
-  }
+  max-width: 847px;
+  width: 100%;
 `;

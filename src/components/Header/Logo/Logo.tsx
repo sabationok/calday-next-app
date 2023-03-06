@@ -1,7 +1,13 @@
-import * as S from "./Logo.styles";
+import images from '@/img';
+import Image from 'next/image';
+import * as S from './Logo.styles';
 
 const Logo: React.FC = () => {
-  return <S.LogoBox>Calday</S.LogoBox>;
+  return (
+    <S.LogoBox>
+      <Image src={images.CaldayLogo} alt={'logo'} />
+    </S.LogoBox>
+  );
 };
 
 export default Logo;

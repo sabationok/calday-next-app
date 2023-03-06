@@ -2,21 +2,27 @@ import styled from 'styled-components';
 
 export const MainTitle = styled.h1`
   /* Hero */
-
-  font-family: 'Gilroy', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 74px;
-  line-height: 1.08;
+  width: 100%;
 
   text-align: center;
 
+  font-weight: 800;
+  font-family: 'Averta CY', sans-serif;
+  font-size: 34px;
+  line-height: 1.29;
+  letter-spacing: 0px;
+
   margin-bottom: 49px;
 
-  /* Brown-prime */
+  color: var(--browmPrimeClr);
 
-  color: #423d2f;
+  @media screen and (min-width: 480px) {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 54px;
+    line-height: 1.08;
+  }
   @media screen and (min-width: 768px) {
-    width: 717px;
+    font-size: 74px;
+    max-width: 717px;
   }
 `;
