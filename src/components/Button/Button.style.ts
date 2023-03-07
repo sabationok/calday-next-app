@@ -13,6 +13,8 @@ export const Button = styled.button`
   user-select: none;
   text-transform: uppercase;
 
+  width: fit-content;
+
   font-size: ${({ variant }: ButtonProps) => variantsMap[variant].fontSize};
   line-height: ${({ variant }: ButtonProps) => variantsMap[variant].lineHeight};
 

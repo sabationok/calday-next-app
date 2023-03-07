@@ -21,7 +21,7 @@ export const SignUpLinkButton = styled.a`
   border-radius: 100px;
 
   &:hover {
-    fill: #ea8c1f;
+    fill: var(--actionOrangeClr);
     color: '#40464E';
     /* background-color: '#372F2A'; */
     border-color: '#EA8C1F';

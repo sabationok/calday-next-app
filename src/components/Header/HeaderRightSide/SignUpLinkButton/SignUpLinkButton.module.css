@@ -9,24 +9,23 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 0.93;
-  color: #40464e;
+  color: var(--blackPrimary);
+  fill: var(--blackPrimary);
 
   text-transform: uppercase;
   background-color: transparent;
   /* background-color: #d8b681; */
 
-  border: 2px solid #d8b681;
+  border: 2px solid var(--brownLightClr);
   border-radius: 100px;
 }
 .SignUpLinkButton:hover {
-  fill: #ea8c1f;
-  color: '#40464E';
-  border-color: '#EA8C1F';
+  fill: var(--actionOrangeClr);
+  border-color: #ea8c1f;
 }
 
 .SignUpLinkButton:active {
-  fill: #ea8c1f;
-  color: '#40464E';
-  background-color: '#F7F6F0';
-  border-color: '#EA8C1F';
+  fill: var(--blackPrimary);
+  background-color: var(--bagePrimary);
+  border-color: var(--bntOutlineActive);
 }

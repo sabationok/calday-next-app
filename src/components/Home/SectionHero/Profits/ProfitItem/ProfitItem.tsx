@@ -6,7 +6,7 @@ const ProfitItem: React.FC<IProfitItem> = ({ icon, alt, title, descr }) => {
   return (
     <S.ProfitItem>
       <S.ProfitItemImg>
-        <Image src={icon} alt={alt} />
+        <Image src={icon} alt={alt} width={48} />
       </S.ProfitItemImg>
 
       <S.ProfitItemTitle>{title}</S.ProfitItemTitle>
@@ -15,4 +15,5 @@ const ProfitItem: React.FC<IProfitItem> = ({ icon, alt, title, descr }) => {
     </S.ProfitItem>
   );
 };
+
 export default ProfitItem;

@@ -1,17 +1,8 @@
-import React from 'react';
-import images from '@/img';
+import { ISvgIcon } from '@/types/types';
 
 import * as S from './SvgIcon.style';
 
-export interface ISvgIconProps {
-  iconId?: string;
-  style?: object;
-  size?: string;
-  width?: string;
-  height?: string;
-}
-
-const SvgIcon: React.FC<ISvgIconProps> = ({
+const SvgIcon: React.FC<ISvgIcon> = ({
   iconId,
   style,
   width,

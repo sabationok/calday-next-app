@@ -5,7 +5,7 @@ import * as S from './Logo.styles';
 const Logo: React.FC = () => {
   return (
     <S.LogoBox>
-      <Image src={images.CaldayLogo} alt={'logo'} />
+      <Image src={images.CaldayLogo} alt={'logo'} width={96} />
     </S.LogoBox>
   );
 };

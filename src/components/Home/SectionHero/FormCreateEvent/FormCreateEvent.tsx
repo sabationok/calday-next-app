@@ -1,4 +1,5 @@
 import Button from '@/components/Button/Button';
+import SvgIcons, { IconsMap } from '@/components/SvgIcon/SvgIcons';
 import testData from '@/testData';
 
 import * as S from './FormCreateEvent.style';
@@ -27,6 +28,8 @@ const FormCreateEvent: React.FC = () => {
           <S.ButtonName>
             {testData.createEventFormData.submitButtonName}
           </S.ButtonName>
+
+          <SvgIcons icon={IconsMap.arrowRight} size="16px" />
         </Button>
       </S.Wrapper>
 

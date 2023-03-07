@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
-export const MainImageContainer = styled.div`
+export const HeroImageContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   position: relative;
+
+  height: 379px;
+  overflow: hidden;
 `;
 
-export const MainImageBox = styled.div`
+export const HeroImageBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const MainTitle = styled.h1`
-  /* Hero */
+export const HeroTitle = styled.h1`
   width: 100%;
 
   text-align: center;

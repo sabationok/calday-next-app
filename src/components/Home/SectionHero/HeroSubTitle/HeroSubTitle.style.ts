@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MainSubTitle = styled.p`
+export const HeroSubTitle = styled.p`
   font-family: 'Gilroy', sans-serif;
 
   font-weight: 400;

@@ -1,14 +1,13 @@
 import SignUpLinkButton from './SignUpLinkButton/SignUpLinkButton';
 import * as S from './HeaderRightSide.style';
+import NavMenuMobile from '../NavMenuMobile/NavMenuMobile';
 
 const HeaderRightSide: React.FC = () => {
   return (
     <S.SignUpBox>
       <SignUpLinkButton />
 
-      {/* <Button variant="outlinedSmall">
-        <span>SIGN UP</span>
-      </Button> */}
+      <NavMenuMobile />
     </S.SignUpBox>
   );
 };

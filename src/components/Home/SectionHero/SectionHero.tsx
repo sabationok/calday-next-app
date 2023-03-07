@@ -1,30 +1,32 @@
 import Profits from './Profits/Profits';
-import MainTitle from './MainTitle/MainTitle';
-import MainSubTitle from './MainSubTitle/MainSubTitle';
 import FormCreateEvent from './FormCreateEvent/FormCreateEvent';
+import HeroImage from './HeroImage/HeroImage';
+import HeroTitle from './HeroTitle/HeroTitle';
+import HeroSubTitle from './HeroSubTitle/HeroSubTitle';
 import testData from '@/testData';
-import MainImage from './MainImage/MainImage';
 
 import * as S from './SectionHero.style';
 import SG from '@/styles';
 
 const SectionHero: React.FC = () => {
+  const { title, subTitle, profitsList } = testData.heroData;
+
   return (
     <>
       <S.SectionHero>
         <SG.Container>
           <S.FlexWrapper>
-            <MainTitle title={testData.heroData.title} />
+            <HeroTitle>{title}</HeroTitle>
 
-            <MainSubTitle subTitle={testData.heroData.subTitle} />
+            <HeroSubTitle>{subTitle}</HeroSubTitle>
 
             <FormCreateEvent />
           </S.FlexWrapper>
         </SG.Container>
 
-        <MainImage />
+        <HeroImage />
 
-        <Profits profitsList={testData.advantagesList} />
+        <Profits profitsList={profitsList} />
       </S.SectionHero>
     </>
   );
