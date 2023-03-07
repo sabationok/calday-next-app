@@ -14,8 +14,6 @@ export const Features = styled.div`
   @media screen and (min-width: 1100px) {
     padding: 0 85px 0 119px;
   }
-
-  /* outline: 1px solid tomato; */
 `;
 
 export const FeaturesList = styled.ul`

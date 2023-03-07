@@ -12,6 +12,25 @@ export const heroSectionData = {
   title: 'Small Business Scheduling Software',
   subTitle:
     'Our appointment scheduler allows you to easily manage your appointments, send automated reminders, and customize your availability. Plus, with our intuitive interface and powerful features',
+
+  heroImage: {
+    image: images.image_phone_1_2x,
+    alt: 'hero image',
+    eventItemLeft: {
+      avatar: images.avatarLeft,
+      alt: '',
+      name: 'Chloe',
+      event: 'booked Meeting',
+      date: 'Monday, 2:10 PM',
+    },
+    eventItemRight: {
+      avatar: images.avatarRight,
+      alt: '',
+      name: 'Joe',
+      event: 'booked Ad Consultation',
+      date: 'Tomorrow, 4:30 PM',
+    },
+  },
   createEventFormData: {
     note: '*You will be able setup event details later',
     eventInputPlaceholder: 'Enter event title',
@@ -72,7 +91,7 @@ export const featuresSectionData = {
       title: 'Personal Booking Page for Clients',
       descr:
         "We've taken the best practices from the most popular calendar applications to make our the best",
-      imgURL: '',
+      imgURL: images.futureImg_2_2x,
     },
     {
       id: '3',
@@ -81,7 +100,7 @@ export const featuresSectionData = {
       title: 'Waitlist',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
-      imgURL: '',
+      imgURL: images.futureImg_3_2x,
     },
     {
       id: '4',
@@ -90,7 +109,7 @@ export const featuresSectionData = {
       title: 'Reminders for You and Your Clients',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
-      imgURL: '',
+      imgURL: images.futureImg_4_2x,
     },
   ],
   integrations: {

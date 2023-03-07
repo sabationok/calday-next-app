@@ -17,6 +17,14 @@ export interface IHeroTitle {
 export interface IHeroSubTitle {
   children?: React.ReactNode;
 }
+export interface IEventItem {
+  avatar: string | StaticImageData;
+  alt: string;
+  name?: string;
+  event?: string;
+  date?: string;
+  style?: object;
+}
 export interface IFeatureItem {
   icon: string | StaticImageData;
   alt: string;

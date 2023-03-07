@@ -15,6 +15,9 @@ import icon_google_calendar from './icon_google-calendar.png';
 import avatarLeft from './avatarLeft.png';
 import avatarRight from './avatarRight.png';
 import futureImg_1_2x from './futureImg_1_2x.png';
+import futureImg_2_2x from './futureImg_2_2x.png';
+import futureImg_3_2x from './futureImg_3_2x.png';
+import futureImg_4_2x from './futureImg_4_2x.png';
 
 const images = {
   CaldayLogo,
@@ -24,6 +27,9 @@ const images = {
   icon_alert,
   image_phone_1_2x,
   futureImg_1_2x,
+  futureImg_2_2x,
+  futureImg_3_2x,
+  futureImg_4_2x,
   icon_calendar,
   icon_clipboard,
   icon_store,
