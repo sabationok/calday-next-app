@@ -8,10 +8,19 @@ export const navLinks = [
   { name: 'Pricing', path: '#' },
 ];
 
-export const heroData = {
+export const heroSectionData = {
   title: 'Small Business Scheduling Software',
   subTitle:
     'Our appointment scheduler allows you to easily manage your appointments, send automated reminders, and customize your availability. Plus, with our intuitive interface and powerful features',
+  createEventFormData: {
+    note: '*You will be able setup event details later',
+    eventInputPlaceholder: 'Enter event title',
+    eventInputName: 'eventName',
+    timeInputName: 'eventTime',
+    timeInputPlaceholder: '30 min',
+    submitButtonName: 'Get your link',
+    submitButtonNameMobile: 'Get your scheduling link',
+  },
   profitsList: [
     {
       id: '1',
@@ -44,16 +53,6 @@ export const heroData = {
   ],
 };
 
-export const createEventFormData = {
-  note: '*You will be able setup event details later',
-  eventInputPlaceholder: 'Enter event title',
-  eventInputName: 'eventName',
-  timeInputName: 'eventTime',
-  timeInputPlaceholder: '30 min',
-  submitButtonName: 'Get your link',
-  submitButtonNameMobile: 'Get your scheduling link',
-};
-
 export const featuresSectionData = {
   title: 'Features',
   featuresList: [
@@ -64,7 +63,7 @@ export const featuresSectionData = {
       title: 'Appointment Calendar',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
-      imgURL: '',
+      imgURL: images.futureImg_1_2x,
     },
     {
       id: '2',

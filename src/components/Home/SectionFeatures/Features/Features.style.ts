@@ -23,20 +23,22 @@ export const FeaturesList = styled.ul`
   flex-direction: column;
 
   @media screen and (max-width: 480px) {
-    gap: 35px;
+    /* gap: 35px; */
   }
   @media screen and (min-width: 480px) {
-    gap: 15px;
+    /* gap: 15px; */
   }
 `;
 
 export const FeaturesIlustrationImage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
-
-  /* outline: 1px solid tomato; */
 `;

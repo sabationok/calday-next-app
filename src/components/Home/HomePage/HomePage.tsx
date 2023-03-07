@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
+import Layout from '@/components/Layout/Layout';
 import SectionBuyNow from '../SectionBuyNow/SectionBuyNow';
 import SectionFAQ from '../SectionFAQ/SectionFAQ';
 import SectionFeatures from '../SectionFeatures/SectionFeatures';
@@ -8,7 +9,7 @@ import SectionShedulingInfo from '../SectionShedulingInfo/SectionShedulingInfo';
 
 const HomePage: React.FC = () => {
   return (
-    <>
+    <Layout>
       <Header />
       <main>
         <SectionHero />
@@ -19,7 +20,7 @@ const HomePage: React.FC = () => {
         <SectionBuyNow />
       </main>
       <Footer />
-    </>
+    </Layout>
   );
 };
 

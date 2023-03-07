@@ -22,6 +22,10 @@ export interface IFeatureItem {
   alt: string;
   title?: string;
   descr?: string;
+  imgURL?: string | StaticImageData;
+  idx: number;
+  current: number;
+  onClick: Function;
 }
 export interface IIntegrationItem {
   icon: string | StaticImageData;

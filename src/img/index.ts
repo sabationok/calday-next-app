@@ -14,6 +14,7 @@ import icon_zoom from './icon_zoom.png';
 import icon_google_calendar from './icon_google-calendar.png';
 import avatarLeft from './avatarLeft.png';
 import avatarRight from './avatarRight.png';
+import futureImg_1_2x from './futureImg_1_2x.png';
 
 const images = {
   CaldayLogo,
@@ -22,6 +23,7 @@ const images = {
   icon_phonebook,
   icon_alert,
   image_phone_1_2x,
+  futureImg_1_2x,
   icon_calendar,
   icon_clipboard,
   icon_store,
