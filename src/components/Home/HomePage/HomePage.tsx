@@ -2,6 +2,7 @@ import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Layout from '@/components/Layout/Layout';
 import SectionBuyNow from '../SectionBuyNow/SectionBuyNow';
+import SectionDownloadApp from '../SectionDownloadApp/SectionDownloadApp';
 import SectionFAQ from '../SectionFAQ/SectionFAQ';
 import SectionFeatures from '../SectionFeatures/SectionFeatures';
 import SectionHero from '../SectionHero/SectionHero';
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
         <SectionHero />
         <SectionFeatures />
         <SectionShedulingInfo />
+        <SectionDownloadApp />
         {/* <SectionByCustomers /> */}
         <SectionFAQ />
         <SectionBuyNow />

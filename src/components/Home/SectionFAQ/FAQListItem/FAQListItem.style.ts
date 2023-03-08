@@ -7,7 +7,7 @@ export const ListItem = styled.li`
 
   box-shadow: -40px 20px 100px rgba(163, 159, 139, 0.1);
 
-  fill: ${({ isOpen }: IItemState) => (isOpen ? '#d9b682' : '#62C45B')};
+  fill: ${({ isOpen }: IItemState) => (!isOpen ? '#d9b682' : '#62C45B')};
   overflow: hidden;
 
   border-radius: 10px;

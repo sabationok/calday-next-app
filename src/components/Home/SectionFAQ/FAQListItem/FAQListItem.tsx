@@ -1,21 +1,27 @@
+import SvgIcons, { IconsMap } from '@/components/SvgIcon/SvgIcons';
 import { IFAQItem } from '@/types/types';
-import { useState } from 'react';
 import * as S from './FAQListItem.style';
 
 export interface IItemState {
   isOpen: boolean;
 }
 
-const FAQListItem: React.FC<IFAQItem> = ({ title, descr }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const hanleOpenItem = () => {
-    setIsOpen(prev => !prev);
-  };
-
+const FAQListItem: React.FC<IFAQItem> = ({
+  title,
+  descr,
+  onClick,
+  isOpen = false,
+}) => {
   return (
     <S.ListItem isOpen={isOpen}>
-      <S.OpenItemButton onClick={hanleOpenItem}>{title}</S.OpenItemButton>
+      <S.OpenItemButton onClick={onClick}>
+        <SvgIcons
+          icon={IconsMap.materialArrowRight}
+          size="24px"
+          style={{ transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}
+        />
+        <span>{title}</span>
+      </S.OpenItemButton>
 
       <S.ItemDescription isOpen={isOpen}>{descr}</S.ItemDescription>
     </S.ListItem>

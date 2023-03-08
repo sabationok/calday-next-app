@@ -165,6 +165,7 @@ export const shedulingSectionData = {
         ' Track progress.',
         ' Monitor grades.',
       ],
+      link: '#',
     },
     {
       transfer: {
@@ -179,6 +180,7 @@ export const shedulingSectionData = {
         ' Track progress.',
         ' Monitor grades.',
       ],
+      link: '#',
     },
     {
       transfer: {
@@ -193,6 +195,7 @@ export const shedulingSectionData = {
         ' Track progress.',
         ' Monitor grades.',
       ],
+      link: '#',
     },
     {
       transfer: {
@@ -207,8 +210,19 @@ export const shedulingSectionData = {
         ' Track progress.',
         ' Monitor grades.',
       ],
+      link: '#',
     },
   ],
+};
+
+export const downloadAppSectionData = {
+  title: 'All you need in 1 App',
+  descr:
+    'Our appointment scheduler allows you to easily manage your appointments, send automated reminders, and customize your availability. Plus, with our intuitive interface and powerful features',
+  phoneImage: {
+    image: images.iPhone_image_2x,
+    alt: 'iphone 12 pro',
+  },
 };
 
 export const faqSectionData = {
@@ -242,15 +256,66 @@ export const faqSectionData = {
 
 export const buyNowSectionData = {
   title: 'Small Business Scheduling',
-  subtitle:
+  subTitle:
+    'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
+  descr:
     'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
   pricingPeriods: [
-    { id: '1', title: 'Week' },
+    { id: '1', title: 'Week', priceCards: [{ name: 'Free', price: 0 }] },
     { id: '2', title: 'Month' },
     { id: '3', title: 'Year' },
   ],
-  descr:
-    'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
+};
+
+export const footerData = {
+  company: {
+    title: 'Calday ltd.',
+  },
+  useCases: {
+    title: 'Use Cases',
+    links: [
+      { link: '#', name: 'Education' },
+      { link: '#', name: 'Business' },
+      { link: '#', name: 'Industry 1' },
+      { link: '#', name: 'Industry 2' },
+    ],
+  },
+  support: {
+    title: 'Support',
+    links: [
+      { link: '#', name: 'FAQ' },
+      { link: '#', name: 'Terms & Conditions' },
+      { link: '#', name: 'Privacy Policy' },
+    ],
+  },
+  blog: {
+    title: 'Blog',
+    links: [
+      { link: '#', name: 'Article 1' },
+      { link: '#', name: 'Article 2' },
+      { link: '#', name: 'Article 3' },
+    ],
+  },
+  contacts: {
+    email: 'support@calday.app',
+    phone: '',
+  },
+  copyright: '© Calday 2023 | All Rights Reserved',
+};
+
+export const globals = {
+  downloadApp: {
+    googleLink: {
+      img: images.PlayMarketIcon_2x,
+      alt: 'get on Play Market',
+      link: '#',
+    },
+    appleLink: {
+      img: images.AppStoreIcon_2x,
+      alt: 'get on App Store',
+      link: '#',
+    },
+  },
 };
 
 // outlinedSmall: {

@@ -11,6 +11,7 @@
   line-height: 0.93;
   color: var(--blackPrimary);
   fill: var(--blackPrimary);
+  white-space: nowrap;
 
   text-transform: uppercase;
   background-color: transparent;

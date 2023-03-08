@@ -1,22 +1,24 @@
 import styled from 'styled-components';
 
 export const SectionFeatures = styled.section`
+  background-color: var(--bageBackgroundClr);
+`;
+
+export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
 
   padding-top: 73px;
   padding-bottom: 79px;
 
-  min-height: 150px;
+  max-width: 1440px;
 
-  background-color: var(--bageBackgroundClr);
-
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     padding-top: 73px;
     padding-bottom: 79px;
   }
 `;
-
 export const FeaturesTitle = styled.h2`
   font-family: 'Gilroy', sans-serif;
   font-weight: 800;

@@ -1,0 +1,17 @@
+.linkCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+
+  max-width: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  max-height: 64px;
+
+  fill: #d8b682;
+
+  border: 1px solid #dcdbcb;
+  border-radius: 100px;
+}

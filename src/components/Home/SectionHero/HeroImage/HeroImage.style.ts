@@ -7,6 +7,8 @@ export const HeroImageContainer = styled.div`
 
   position: relative;
 
+  width: 100%;
+
   height: 379px;
   overflow: hidden;
 `;

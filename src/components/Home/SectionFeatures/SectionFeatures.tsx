@@ -12,11 +12,13 @@ const SectionFeatures: React.FC<iSectionFeaturesProps> = ({
 }) => {
   return (
     <S.SectionFeatures>
-      <S.FeaturesTitle>{title}</S.FeaturesTitle>
+      <S.SectionContainer>
+        <S.FeaturesTitle>{title}</S.FeaturesTitle>
 
-      <Features />
+        <Features />
 
-      <Integrations />
+        <Integrations />
+      </S.SectionContainer>
     </S.SectionFeatures>
   );
 };

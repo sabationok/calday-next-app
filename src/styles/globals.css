@@ -171,7 +171,7 @@ button {
 }
 :root {
   --brownClr: #372f2a;
-  --browmPrimeClr: #423d2f;
+  --brownPrimeClr: #423d2f;
   --brownLightClr: #d8b681;
   --blackPrimary: #40464e;
   --textBlackClr: #2b2f36;
@@ -184,4 +184,11 @@ button {
   --bageDarkClr: #f2f0e4;
   --bagePrimary: #f7f6f0;
   --bntOutlineActive: #e9e7dd;
+
+  --linearGradient_border: linear-gradient(165deg, #cc3dff 0%, #eda313 100%);
+  --linearGradient_text: linear-gradient(
+    92.94deg,
+    #cc3dff -4.13%,
+    #eda313 101.31%
+  );
 }

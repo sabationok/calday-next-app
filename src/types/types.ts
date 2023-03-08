@@ -41,8 +41,11 @@ export interface IIntegrationItem {
   descr?: string;
 }
 export interface IFAQItem {
-  title: string;
-  descr: string;
+  title?: string;
+  descr?: string;
+  onClick: React.MouseEventHandler;
+  isOpen?: boolean;
+  idx?: number;
 }
 export interface ISvgIcons {
   icon?: { path: React.ReactNode; viewbox: string };
@@ -57,4 +60,11 @@ export interface ISvgIcon {
   size?: string;
   width?: string;
   height?: string;
+}
+export interface ITransferItem {
+  from: string;
+  to: string;
+  fill: string;
+  descrList: string[];
+  link: string;
 }

@@ -9,7 +9,7 @@ export const EventItemsContainer = styled.div`
   height: 100%;
   max-height: 159px;
   max-width: 722px;
-  min-width: 345px;
+  min-width: 250px;
 
   transform: translateX(-50%);
 

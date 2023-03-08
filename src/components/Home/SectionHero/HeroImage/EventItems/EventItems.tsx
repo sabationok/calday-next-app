@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import * as S from './EventItems.style';
 
 import testData from '@/testData';
