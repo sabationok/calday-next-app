@@ -18,20 +18,3 @@ export const EventItemsContainer = styled.div`
     max-height: 116px;
   }
 `;
-
-export const EventItemLeft = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 58px;
-  min-width: 213px;
-
-  border-radius: 50px;
-  padding: 11px 12px;
-
-  overflow: hidden;
-
-  background-color: #fff;
-  box-shadow: -20px 20px 50px rgba(122, 64, 19, 0.3);
-`;

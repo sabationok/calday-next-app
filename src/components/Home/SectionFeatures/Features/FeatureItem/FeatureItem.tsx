@@ -1,25 +1,43 @@
 import Image from 'next/image';
 import * as S from './FeatureItem.style';
 import { IFeatureItem } from '@/types/types';
+import SvgIcons, { IconsMap } from '@/components/SvgIcon/SvgIcons';
 
 const FeatureItem: React.FC<IFeatureItem> = ({
   icon,
-  alt,
+  iconAlt,
   title,
   descr,
-  idx,
-  current,
   onClick,
+  imgURL,
+  imgAlt,
+  isActive,
 }) => {
   return (
-    <S.FeatureItem onClick={() => onClick(idx)} isActive={current === idx}>
-      <Image src={icon} alt={alt} width={48} />
+    <S.FeatureItem isActive={isActive}>
+      <S.FutureButton onClick={onClick}>
+        <Image src={icon} alt={iconAlt} width={48} />
 
-      <S.RightSide>
-        <S.FutereTitle>{title}</S.FutereTitle>
+        <S.RightSide>
+          <S.TitleWrapper>
+            <S.FutureTitle>{title}</S.FutureTitle>
 
-        <S.FutureDescr>{descr}</S.FutureDescr>
-      </S.RightSide>
+            <SvgIcons
+              icon={IconsMap.materialArrowRight}
+              size="24px"
+              style={{ transform: `rotate(${isActive ? 90 : 0}deg)` }}
+            />
+          </S.TitleWrapper>
+
+          <S.FutureDescr>{descr}</S.FutureDescr>
+        </S.RightSide>
+      </S.FutureButton>
+
+      {isActive && (
+        <S.FutureItemImage>
+          <Image src={imgURL} alt={imgAlt} />
+        </S.FutureItemImage>
+      )}
     </S.FeatureItem>
   );
 };

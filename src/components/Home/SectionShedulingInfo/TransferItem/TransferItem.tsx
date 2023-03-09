@@ -17,7 +17,7 @@ const TransferItem: React.FC<ITransferItem> = ({
       <S.TitleWrapper>
         <S.Title>{from}</S.Title>
 
-        <SvgIcons icon={IconsMap.close} />
+        <SvgIcons icon={IconsMap.muiTransferArrows} />
 
         <S.Title>{to}</S.Title>
       </S.TitleWrapper>

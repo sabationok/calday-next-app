@@ -1,7 +1,11 @@
 import * as S from './Button.style';
 
 export interface ButtonProps {
-  variant: 'filled' | 'outlinedLarge' | 'outlinedSmall';
+  variant:
+    | 'filled'
+    | 'outlinedLarge'
+    | 'outlinedSmall'
+    | 'outlinedLargeGradient';
   type?: 'button' | 'submit' | 'reset';
   children?: React.ReactNode;
   style?: object;

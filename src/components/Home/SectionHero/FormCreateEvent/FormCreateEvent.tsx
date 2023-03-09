@@ -21,10 +21,10 @@ const FormCreateEvent: React.FC = () => {
           />
         </S.InputsWrapper>
 
-        <Button variant="filled">
-          <S.ButtonNameMobile>
+        <Button variant="filled" style={{ width: '100%' }}>
+          {/* <S.ButtonNameMobile>
             {createEventFormData.submitButtonNameMobile}
-          </S.ButtonNameMobile>
+          </S.ButtonNameMobile> */}
 
           <S.ButtonName>{createEventFormData.submitButtonName}</S.ButtonName>
 

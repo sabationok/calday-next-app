@@ -32,10 +32,5 @@ export const TransfersList = styled.ul`
   justify-content: center;
   gap: 20px;
 
-  padding: 0 12px;
-  margin-bottom: 115px;
-
-  @media screen and (min-width: 768px) {
-    padding: 0 20px;
-  }
+  margin: 0 auto 115px;
 `;

@@ -1,9 +1,11 @@
 import * as S from './ByNowZone.style';
 import { useState } from 'react';
 import testData from '@/testData';
+import PriceCard from './PriceCard/PriceCard';
 
 const ByNowZone: React.FC = () => {
   const [current, setCurrentPricePeriod] = useState(0);
+  const { pricingPeriods } = testData.buyNowSectionData;
 
   const onPeriodBtnClick = (idx: number) => {
     setCurrentPricePeriod(idx);
@@ -27,19 +29,13 @@ const ByNowZone: React.FC = () => {
       </S.PeriodButtons>
 
       <S.CardsList>
-        <S.BuyCard>
-          <S.BuyCardInner>
-            <S.CardTitle>free</S.CardTitle>
-            <S.CardSubTitle>for small businesses</S.CardSubTitle>
-          </S.BuyCardInner>
-        </S.BuyCard>
-
-        <S.BuyCard isPremium>
-          <S.BuyCardInner>
-            <S.CardTitlePremium>premium</S.CardTitlePremium>
-            <S.CardSubTitle>for growing businesses</S.CardSubTitle>
-          </S.BuyCardInner>
-        </S.BuyCard>
+        {pricingPeriods[current].priceCards.map(card => (
+          <PriceCard
+            key={card.title}
+            {...card}
+            period={pricingPeriods[current].title.toLowerCase()}
+          />
+        ))}
       </S.CardsList>
     </S.ByNowZone>
   );

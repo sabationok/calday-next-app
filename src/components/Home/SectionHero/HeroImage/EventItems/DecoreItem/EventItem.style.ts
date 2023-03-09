@@ -8,8 +8,12 @@ export const EventItem = styled.div`
   position: absolute;
 
   height: 58px;
-  width: 243px;
-  width: 268px;
+
+  width: 100%;
+  min-width: max-content;
+
+  max-width: 268px;
+
   border-radius: 50px;
   padding: 6px 12px;
 
@@ -25,7 +29,7 @@ export const ItemRapper = styled.div``;
 export const ItemNameWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 `;
 export const ItemName = styled.span`
   font-family: 'Gilroy', sans-serif;

@@ -19,6 +19,8 @@
 
   border: 2px solid var(--brownLightClr);
   border-radius: 100px;
+
+  transition: all var(--timing-function__main);
 }
 .SignUpLinkButton:hover {
   fill: var(--actionOrangeClr);

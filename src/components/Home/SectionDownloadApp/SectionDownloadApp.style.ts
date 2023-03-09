@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SectionDownloadApp = styled.div`
+export const SectionDownloadApp = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -16,8 +16,11 @@ export const ImageSide = styled.div`
 `;
 
 export const TextSide = styled.div`
-  padding-right: 15px;
-  min-width: 600px;
+  padding: 0 15px 150px 15px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 600px;
+  }
 `;
 
 export const Title = styled.h3`

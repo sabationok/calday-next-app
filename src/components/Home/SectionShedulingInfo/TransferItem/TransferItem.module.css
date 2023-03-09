@@ -14,4 +14,9 @@
 
   border: 1px solid #dcdbcb;
   border-radius: 100px;
+
+  transition: all var(--timing-function__main);
+}
+.linkCircle:hover {
+  border-color: #d8b682;
 }

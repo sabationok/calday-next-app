@@ -3,6 +3,7 @@ import testData from '@/testData';
 
 import * as S from './SectionFAQ.style';
 import { useState } from 'react';
+import SG from '@/styles';
 
 const { faqList } = testData.faqSectionData;
 
@@ -15,20 +16,22 @@ const SectionFAQ: React.FC = () => {
 
   return (
     <S.SectionFAQ>
-      <S.Title>FAQ</S.Title>
+      <SG.Container>
+        <S.Title>FAQ</S.Title>
 
-      <S.FAQList>
-        {faqList.map((item, idx) => {
-          return (
-            <FAQListItem
-              key={item.id}
-              {...item}
-              onClick={() => onItemClick(idx)}
-              isOpen={current === idx}
-            />
-          );
-        })}
-      </S.FAQList>
+        <S.FAQList>
+          {faqList.map((item, idx) => {
+            return (
+              <FAQListItem
+                key={item.id}
+                {...item}
+                onClick={() => onItemClick(idx)}
+                isOpen={current === idx}
+              />
+            );
+          })}
+        </S.FAQList>
+      </SG.Container>
     </S.SectionFAQ>
   );
 };

@@ -78,38 +78,42 @@ export const featuresSectionData = {
     {
       id: '1',
       icon: images.icon_calendar,
-      alt: 'icon calendar',
+      iconAlt: 'icon calendar',
       title: 'Appointment Calendar',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
       imgURL: images.futureImg_1_2x,
+      imgAlt: 'big calenar demo',
     },
     {
       id: '2',
       icon: images.icon_store,
-      alt: 'icon store',
+      iconAlt: 'icon store',
       title: 'Personal Booking Page for Clients',
       descr:
         "We've taken the best practices from the most popular calendar applications to make our the best",
       imgURL: images.futureImg_2_2x,
+      imgAlt: '',
     },
     {
       id: '3',
       icon: images.icon_clipboard,
-      alt: 'icon clipboard',
+      iconAlt: 'icon clipboard',
       title: 'Waitlist',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
       imgURL: images.futureImg_3_2x,
+      imgAlt: '',
     },
     {
       id: '4',
       icon: images.icon_mail_inbox,
-      alt: 'icon mail inbox',
+      iconAlt: 'icon mail inbox',
       title: 'Reminders for You and Your Clients',
       descr:
         'Use free slots feature to get the best time for scheduling new appointment or add breaks to relax',
       imgURL: images.futureImg_4_2x,
+      imgAlt: '',
     },
   ],
   integrations: {
@@ -261,15 +265,93 @@ export const buyNowSectionData = {
   descr:
     'We help to organize tasks, appointments, and events, allowing users to save time and increase productivity',
   pricingPeriods: [
-    { id: '1', title: 'Week', priceCards: [{ name: 'Free', price: 0 }] },
-    { id: '2', title: 'Month' },
-    { id: '3', title: 'Year' },
+    {
+      id: '1',
+      title: 'Week',
+      priceCards: [
+        {
+          isPremium: false,
+          title: 'free',
+          subTitle: 'for small businesses',
+          price: 0,
+          buttonTitle: 'start for free',
+          options: [
+            'Personal Booking Link',
+            ' 100 Bookings per Month',
+            ' 1 Event Type',
+          ],
+        },
+        {
+          isPremium: true,
+          title: 'premium',
+          subTitle: 'for growing businesses',
+          price: 6,
+          sale: 'Save 50%',
+          buttonTitle: 'start premium',
+          options: [
+            'Everything from Free package',
+            'Unlimited Event Types',
+            'Unlimited Clients',
+            'Business Statistics',
+            'More Integrations',
+            'Client Notifications',
+          ],
+        },
+      ],
+    },
+    {
+      id: '2',
+      title: 'Month',
+      priceCards: [
+        {
+          isPremium: false,
+          title: 'free',
+          subTitle: 'for small businesses',
+          price: 0,
+          buttonTitle: 'start for free',
+          options: [1, 2, 3, 4, 5, 6],
+        },
+        {
+          isPremium: true,
+          title: 'premium',
+          subTitle: 'for growing businesses',
+          price: 24,
+          sale: 'Save 50%',
+          buttonTitle: 'start premium',
+          options: [1, 2, 3, 4, 5, 6],
+        },
+      ],
+    },
+    {
+      id: '3',
+      title: 'Year',
+      priceCards: [
+        {
+          isPremium: false,
+          title: 'free',
+          subTitle: 'for small businesses',
+          price: 0,
+          buttonTitle: 'start for free',
+          options: [1, 2, 3, 4, 5, 6],
+        },
+        {
+          isPremium: true,
+          title: 'premium',
+          subTitle: 'for growing businesses',
+          price: 72,
+          sale: 'Save 50%',
+          buttonTitle: 'start premium',
+          options: [1, 2, 3, 4, 5, 6],
+        },
+      ],
+    },
   ],
 };
 
 export const footerData = {
   company: {
     title: 'Calday ltd.',
+    company: 'Calday ltd.',
   },
   useCases: {
     title: 'Use Cases',
@@ -296,10 +378,7 @@ export const footerData = {
       { link: '#', name: 'Article 3' },
     ],
   },
-  contacts: {
-    email: 'support@calday.app',
-    phone: '',
-  },
+  contacts: { title: 'Contacts', email: 'support@calday.app', phone: '' },
   copyright: '© Calday 2023 | All Rights Reserved',
 };
 

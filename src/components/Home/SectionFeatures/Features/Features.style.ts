@@ -36,6 +36,8 @@ export const FeaturesIlustrationImage = styled.div`
   width: 100%;
   height: 100%;
 
+  max-height: 512px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }

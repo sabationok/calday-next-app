@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionFAQ = styled.section`
-  padding: 78px 12px 130px;
+  padding: 78px 0 130px;
   min-height: 150px;
   background-color: var(--bageBackgroundClr);
 `;
@@ -21,8 +21,8 @@ export const Title = styled.h2`
 `;
 
 export const FAQList = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 
   margin: 0 auto;

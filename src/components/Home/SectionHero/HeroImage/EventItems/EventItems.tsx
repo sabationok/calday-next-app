@@ -7,9 +7,15 @@ const EventItems: React.FC = () => {
   const { eventItemLeft, eventItemRight } = testData.heroSectionData.heroImage;
   return (
     <S.EventItemsContainer>
-      <DecoreItem {...eventItemLeft} style={{ top: 0, left: 0 }} />
+      <DecoreItem
+        {...eventItemLeft}
+        style={{ top: 0, left: 0, minWidth: '253' }}
+      />
 
-      <DecoreItem {...eventItemRight} style={{ bottom: 0, right: 0 }} />
+      <DecoreItem
+        {...eventItemRight}
+        style={{ bottom: 0, right: 0, minWidth: '265' }}
+      />
     </S.EventItemsContainer>
   );
 };

@@ -23,7 +23,9 @@ const FAQListItem: React.FC<IFAQItem> = ({
         <span>{title}</span>
       </S.OpenItemButton>
 
-      <S.ItemDescription isOpen={isOpen}>{descr}</S.ItemDescription>
+      <S.ItemDescription isOpen={isOpen}>
+        <S.ItemDescriptionInner>{descr}</S.ItemDescriptionInner>
+      </S.ItemDescription>
     </S.ListItem>
   );
 };

@@ -14,17 +14,20 @@ export const ListItem = styled.li`
   border: 1px solid;
   border-color: ${({ isOpen }: IItemState) =>
     isOpen ? '#d9b682' : 'transparent'};
+
+  transition: all var(--timing-function__main);
 `;
 
 export const OpenItemButton = styled.button`
   display: flex;
+
   gap: 20px;
 
   font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
-
+  text-align: left;
   color: var(--blackPrimary);
 
   width: 100%;
@@ -38,11 +41,7 @@ export const OpenItemButton = styled.button`
   border-radius: 10px;
 `;
 
-export const ItemDescription = styled.span`
-  display: block;
-
-  overflow: hidden;
-
+export const ItemDescription = styled.div`
   font-family: 'Gilroy', sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -51,6 +50,13 @@ export const ItemDescription = styled.span`
   color: var(--textBlackClr);
 
   max-height: ${({ isOpen }: IItemState) => (isOpen ? '100%' : '0')};
-  padding: ${({ isOpen }: IItemState) =>
-    isOpen ? '21px 16px 21px 64px' : '0'};
+  padding: ${({ isOpen }: IItemState) => (isOpen ? '0 16px 0 64px' : '0')};
+  visibility: ${({ isOpen }: IItemState) => (isOpen ? 'visible' : 'hidden')};
+  opacity: ${({ isOpen }: IItemState) => (isOpen ? '1' : '0')};
+
+  transition: all var(--timing-function__main);
+`;
+export const ItemDescriptionInner = styled.span`
+  display: block;
+  padding: 21px 0 21px 0;
 `;

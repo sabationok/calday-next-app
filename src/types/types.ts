@@ -27,13 +27,13 @@ export interface IEventItem {
 }
 export interface IFeatureItem {
   icon: string | StaticImageData;
-  alt: string;
+  iconAlt: string;
   title?: string;
   descr?: string;
-  imgURL?: string | StaticImageData;
-  idx: number;
-  current: number;
-  onClick: Function;
+  imgURL: string | StaticImageData;
+  imgAlt: string;
+  isActive?: boolean;
+  onClick?: React.MouseEventHandler;
 }
 export interface IIntegrationItem {
   icon: string | StaticImageData;

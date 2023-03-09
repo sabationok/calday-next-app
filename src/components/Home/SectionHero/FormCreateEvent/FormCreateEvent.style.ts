@@ -108,9 +108,9 @@ export const ButtonNameMobile = styled.span`
   }
 `;
 export const ButtonName = styled.span`
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     display: none;
-  }
+  } */
 `;
 
 export const FormNoteText = styled.span`

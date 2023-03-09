@@ -19,6 +19,7 @@ const EventItem: React.FC<IEventItem> = ({
       <S.ItemRapper>
         <S.ItemNameWrapper>
           <S.ItemName>{name}</S.ItemName>
+
           <S.ItemEvent>{event}</S.ItemEvent>
         </S.ItemNameWrapper>
 

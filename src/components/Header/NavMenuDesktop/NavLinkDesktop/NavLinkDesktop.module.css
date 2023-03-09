@@ -3,6 +3,8 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 0.93;
+
+  transition: all var(--timing-function__main);
 }
 .navLink:hover {
   color: var(--actionOrangeClr);

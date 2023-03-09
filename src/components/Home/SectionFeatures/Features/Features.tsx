@@ -20,7 +20,13 @@ const Features: React.FC = () => {
           {featuresList.map((item, idx) => (
             <FeatureItem
               key={item.id}
-              {...{ ...item, idx, onClick: onFutureItemClick, current }}
+              {...{
+                ...item,
+                onClick: () => {
+                  onFutureItemClick(idx);
+                },
+                isActive: current === idx,
+              }}
             />
           ))}
         </S.FeaturesList>
@@ -28,7 +34,7 @@ const Features: React.FC = () => {
         <S.FeaturesIlustrationImage>
           <Image
             src={featuresList[current].imgURL}
-            alt={featuresList[current].alt}
+            alt={featuresList[current].imgAlt}
           />
         </S.FeaturesIlustrationImage>
       </S.Features>

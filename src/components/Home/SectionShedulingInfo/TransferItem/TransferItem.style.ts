@@ -8,15 +8,17 @@ export const TransferItem = styled.li<{ fill: string }>`
 
   padding: 30px 20px 20px;
 
-  max-width: 335px;
+  width: 100%;
   height: 335px;
 
-  flex-basis: 230px;
-  flex-grow: 1;
+  /* flex-basis: 230px;
+  flex-grow: 1; */
 
   background: #feffdf;
   border-radius: 10px;
-
+  @media screen and (min-width: 480px) {
+    max-width: 335px;
+  }
   @media screen and (min-width: 768px) {
     padding: 36px 30px 24px;
   }
