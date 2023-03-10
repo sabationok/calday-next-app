@@ -1,14 +1,11 @@
 import { INavLink } from '@/types/types';
-import Link from 'next/link';
 
-import s from './NavLinkMobile.module.css';
+import * as S from './NavLinkMobile.style';
 
 const NavLinkMobile: React.FC<INavLink> = ({ path, name }) => {
   return (
     <li>
-      <Link href={path} className={s.navLink}>
-        {name}
-      </Link>
+      <S.NavLinkMobile href={path}>{name}</S.NavLinkMobile>
     </li>
   );
 };

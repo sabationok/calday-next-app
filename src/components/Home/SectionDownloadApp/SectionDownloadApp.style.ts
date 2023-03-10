@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 export const SectionDownloadApp = styled.section`
@@ -50,4 +52,47 @@ export const DownloadButtons = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+`;
+
+export const GetAppLink = styled(Link)`
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4px;
+
+  color: #fff;
+
+  height: 44px;
+  width: 150px;
+  min-width: 150px;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+  background-color: #2b2f36;
+  border: 1px solid #a6a6a6;
+  &:hover {
+    border-color: var(--actionOrangeClr);
+  }
+`;
+export const LinkIcon = styled(Image)`
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  width: 26px;
+`;
+
+export const LinkTitle = styled.span`
+  white-space: nowrap;
+  font-size: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+`;
+
+export const LinkName = styled.span`
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  grid-column: 2/3;
+  grid-row: 2/3;
 `;

@@ -2,7 +2,6 @@ import SvgIcons, { IconsMap } from '@/components/SvgIcon/SvgIcons';
 import { ITransferItem } from '@/types/types';
 import Link from 'next/link';
 
-import s from './TransferItem.module.css';
 import * as S from './TransferItem.style';
 
 const TransferItem: React.FC<ITransferItem> = ({
@@ -28,9 +27,9 @@ const TransferItem: React.FC<ITransferItem> = ({
         ))}
       </S.DescrList>
 
-      <Link href={link} className={s.linkCircle}>
+      <S.CircleLink href={link}>
         <SvgIcons icon={IconsMap.materialArrowRight} size="24px" />
-      </Link>
+      </S.CircleLink>
     </S.TransferItem>
   );
 };

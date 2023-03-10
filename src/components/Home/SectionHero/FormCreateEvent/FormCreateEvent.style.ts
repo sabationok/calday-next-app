@@ -88,6 +88,7 @@ export const InputTime = styled.input`
   &:hover {
   }
   &:focus {
+    background-color: #fff;
   }
   &:placeholder-shown {
     background-color: #f7f6f0;

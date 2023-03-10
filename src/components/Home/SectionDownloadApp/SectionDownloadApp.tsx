@@ -2,7 +2,6 @@ import testData from '@/testData';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import s from './DownloadAppLink.module.css';
 import * as S from './SectionDownloadApp.style';
 
 const SectionDownloadApp: React.FC = () => {
@@ -22,33 +21,27 @@ const SectionDownloadApp: React.FC = () => {
         <S.SubTitle>{downloadAppSectionData.descr}</S.SubTitle>
 
         <S.DownloadButtons>
-          <Link
-            href={globals.downloadApp.googleLink.link}
-            className={s.getAppLink}
-          >
-            <Image
+          <S.GetAppLink href={globals.downloadApp.googleLink.link}>
+            <S.LinkIcon
               src={globals.downloadApp.googleLink.img}
               alt={globals.downloadApp.googleLink.alt}
               width={26}
-              className={s.linkIcon}
             />
-            <span className={s.linkTitle}>GET IT ON</span>
-            <span className={s.linkName}>Google Play</span>
-          </Link>
+            <S.LinkTitle>GET IT ON</S.LinkTitle>
 
-          <Link
-            href={globals.downloadApp.appleLink.link}
-            className={s.getAppLink}
-          >
-            <Image
+            <S.LinkName>Google Play</S.LinkName>
+          </S.GetAppLink>
+
+          <S.GetAppLink href={globals.downloadApp.appleLink.link}>
+            <S.LinkIcon
               src={globals.downloadApp.appleLink.img}
               alt={globals.downloadApp.appleLink.alt}
               width={26}
-              className={s.linkIcon}
             />
-            <span className={s.linkTitle}>Download on the</span>
-            <span className={s.linkName}>App Store</span>
-          </Link>
+            <S.LinkTitle>Download on the</S.LinkTitle>
+
+            <S.LinkName>App Store</S.LinkName>
+          </S.GetAppLink>
         </S.DownloadButtons>
       </S.TextSide>
     </S.SectionDownloadApp>

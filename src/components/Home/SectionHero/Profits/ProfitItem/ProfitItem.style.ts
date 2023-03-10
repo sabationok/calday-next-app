@@ -33,4 +33,8 @@ export const ProfitItemDescr = styled.span`
   font-weight: 450;
   font-size: 15px;
   line-height: 1.73;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 `;

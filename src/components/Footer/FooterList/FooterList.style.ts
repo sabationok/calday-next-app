@@ -2,9 +2,15 @@ import styled from 'styled-components';
 
 export const FooterList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  grid-template-columns: 1fr;
 
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 `;
 
 export const FooterListItem = styled.li`

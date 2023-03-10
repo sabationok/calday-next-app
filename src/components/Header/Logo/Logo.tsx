@@ -1,5 +1,6 @@
 import images from '@/img';
 import Image from 'next/image';
+
 import * as S from './Logo.styles';
 
 const Logo: React.FC = () => {

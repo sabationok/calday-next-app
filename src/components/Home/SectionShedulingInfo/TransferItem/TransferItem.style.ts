@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 export const TransferItem = styled.li<{ fill: string }>`
@@ -11,8 +12,8 @@ export const TransferItem = styled.li<{ fill: string }>`
   width: 100%;
   height: 335px;
 
-  /* flex-basis: 230px;
-  flex-grow: 1; */
+  flex-basis: 230px;
+  flex-grow: 1;
 
   background: #feffdf;
   border-radius: 10px;
@@ -59,4 +60,27 @@ export const DescrListItem = styled.li`
   font-weight: 450;
   font-size: 16px;
   line-height: 2;
+`;
+
+export const CircleLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+
+  max-width: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  max-height: 64px;
+
+  fill: #d8b682;
+
+  border: 1px solid #dcdbcb;
+  border-radius: 100px;
+
+  transition: all var(--timing-function__main);
+  &:hover {
+    border-color: #d8b682;
+  }
 `;

@@ -1,14 +1,15 @@
 import SvgIcon from '@/components/SvgIcon/SvgIcon';
 import SvgIcons, { IconsMap } from '@/components/SvgIcon/SvgIcons';
-import Link from 'next/link';
-import s from './SignUpLinkButton.module.css';
+
+import * as S from './SignUpLinkButton.style';
 
 const SignUpLinkButton = () => {
   return (
-    <Link href={'#'} className={s.SignUpLinkButton}>
+    <S.SignUpLinkButton href={'#'}>
       <span>SIGN UP</span>
+
       <SvgIcons icon={IconsMap.arrowRight} size="12px" />
-    </Link>
+    </S.SignUpLinkButton>
   );
 };
 

@@ -1,14 +1,12 @@
 import { INavLink } from '@/types/types';
 import Link from 'next/link';
 
-import s from './NavLinkDesktop.module.css';
+import * as S from './NavLinkDesktop.style';
 
 const NavLinkDesktop: React.FC<INavLink> = ({ path, name }) => {
   return (
     <li>
-      <Link href={path} className={s.navLink}>
-        {name}
-      </Link>
+      <S.NavLinkDesktop href={path}>{name}</S.NavLinkDesktop>
     </li>
   );
 };

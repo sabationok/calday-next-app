@@ -1,35 +1,37 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
-export const SignUpLinkButton = styled.a`
+export const SignUpLinkButton = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
 
-  padding: 10px 20px;
+  padding: 10px 19px;
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.1;
-  color: #40464e;
+  line-height: 0.93;
+  color: var(--blackPrimary);
+  fill: var(--blackPrimary);
+  white-space: nowrap;
 
   text-transform: uppercase;
   background-color: transparent;
   /* background-color: #d8b681; */
 
-  border: 2px solid #d8b681;
+  border: 2px solid var(--brownLightClr);
   border-radius: 100px;
+
+  transition: all var(--timing-function__main);
 
   &:hover {
     fill: var(--actionOrangeClr);
-    color: '#40464E';
-    /* background-color: '#372F2A'; */
-    border-color: '#EA8C1F';
+    border-color: #ea8c1f;
   }
   &:active {
-    fill: #ea8c1f;
-    color: '#40464E';
-    background-color: '#F7F6F0';
-    border-color: '#EA8C1F';
+    fill: var(--blackPrimary);
+    background-color: var(--bagePrimary);
+    border-color: var(--bntOutlineActive);
   }
 `;
